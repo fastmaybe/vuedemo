@@ -16,4 +16,9 @@ public class UserController {
         System.out.println(user);
         return new Result(true, "ok");
     }
+    @RequestMapping("delete")
+    public Result delete(@RequestBody User user) {
+        System.out.println(user);
+        return new Result(true, "ok");
+    }
 }
