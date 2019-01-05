@@ -16,4 +16,11 @@ public class UserController {
         System.out.println(user);
         return new Result(true, "ok");
     }
+
+    @RequestMapping("add")
+    public Result add(@RequestBody User user) {
+        System.out.println(user);
+        return new Result(true, "ok");
+    }
+
 }
