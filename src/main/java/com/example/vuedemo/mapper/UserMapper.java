@@ -1,4 +1,12 @@
 package com.example.vuedemo.mapper;
 
-public class UserMapper {
+
+import com.example.vuedemo.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface UserMapper {
+
+    void insert(User user);
+
 }
