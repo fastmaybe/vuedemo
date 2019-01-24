@@ -1,25 +1,48 @@
 package com.example.vuedemo.pojo;
 
-public class User {
+import java.io.Serializable;
 
-    private int id;
-    private String name;
+
+public class User  {
+
+    private Long id;
+    private String username;
     private String password;
 
-    public int getId() {
+    private int isDefault;
+    private String keyP;
+
+
+    public int getDefault() {
+        return isDefault;
+    }
+
+    public void setDefault(int aDefault) {
+        isDefault = aDefault;
+    }
+
+    public String getKeyP() {
+        return keyP;
+    }
+
+    public void setKeyP(String keyP) {
+        this.keyP = keyP;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -28,14 +51,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
