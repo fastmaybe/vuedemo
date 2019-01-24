@@ -24,6 +24,7 @@ public class UserService {
         userMapper.insert(user);
         System.out.println();
         System.out.println("assa");
+        System.out.println("阿萨飒飒");
         return null;
     }
 }
