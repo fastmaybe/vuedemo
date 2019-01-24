@@ -23,6 +23,7 @@ public class UserService {
         System.out.println(id);
         userMapper.insert(user);
         System.out.println();
+        System.out.println("assa");
         return null;
     }
 }
