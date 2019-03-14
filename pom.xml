@@ -19,6 +19,7 @@
         <redis_ip>192.168.88.160</redis_ip>
         <redis_port>6379</redis_port>
         <redis_password>123456</redis_password>
+        <!--<springframework.version>5.1.5.RELEASE</springframework.version>-->
     </properties>
 
     <dependencies>
@@ -45,12 +46,12 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>2.2.2</version>
+            <version>2.6.1</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.2.2</version>
+            <version>2.6.1</version>
         </dependency>
 
         <dependency>
