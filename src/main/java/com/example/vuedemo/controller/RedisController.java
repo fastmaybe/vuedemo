@@ -16,11 +16,7 @@ public class RedisController {
 
     @PostMapping("test")
     public void teseRedis(String key,Integer count){
-        redisService.test( key,count);
+        redisService.redisTest(key,count);
     }
 
-    @PostMapping("test2")
-    public void teseRedis(Integer count){
-        redisService.test2( count);
-    }
 }
